@@ -18,9 +18,9 @@ module.exports = {
     path: path.resolve(__dirname, `../${config.outputFolder}`),
     publicPath: '/'
   },
-  mode: 'development',
   devtool: 'inline-source-map',
   devServer: {
+    hot: true,
     historyApiFallback: true,
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
